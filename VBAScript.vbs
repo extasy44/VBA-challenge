@@ -51,9 +51,9 @@ Sub StockMarketAnalysis3()
             ws.Cells(SummaryRow, 11).Value = PercentChange
             ws.Cells(SummaryRow, 11).NumberFormat = "0.00%"
             If PercentChange < 0 Then
-                ws.Cells(SummaryRow, 11).Interior.ColorIndex = 3
+                ws.Cells(SummaryRow, 10).Interior.ColorIndex = 3
             Else
-                ws.Cells(SummaryRow, 11).Interior.ColorIndex = 4
+                ws.Cells(SummaryRow, 10).Interior.ColorIndex = 4
             End If
             
             If PercentChange > GreatestIncrease Then
@@ -97,9 +97,9 @@ Sub StockMarketAnalysis3()
       ws.Cells(SummaryRow, 11).Value = PercentChange
       ws.Cells(SummaryRow, 11).NumberFormat = "0.00%"
       If PercentChange < 0 Then
-          ws.Cells(SummaryRow, 11).Interior.ColorIndex = 3
+          ws.Cells(SummaryRow, 10).Interior.ColorIndex = 3
       Else
-          ws.Cells(SummaryRow, 11).Interior.ColorIndex = 4
+          ws.Cells(SummaryRow, 10).Interior.ColorIndex = 4
       End If
       ws.Cells(SummaryRow, 12).Value = TotalVolume
       
